@@ -12,7 +12,7 @@ const AppWrapper = styled.div`
 function App() {
   return (
     <AppWrapper>
-      <Title>App new</Title>
+      <Title color={"red"}>App new</Title>
     </AppWrapper>
   );
 }
