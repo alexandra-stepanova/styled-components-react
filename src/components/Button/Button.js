@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 const StyledButton = styled.button`
   border: none;
@@ -25,6 +25,10 @@ const StyledButton = styled.button`
       border: 1px solid ${(props) => props.color || "white"};
       background: transparent;
     `}
+`;
+
+const LargeButton = styled(StyledButton)`
+  font-size: 2em;
 `;
 
 export default function Button(props) {
