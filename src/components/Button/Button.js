@@ -1,6 +1,15 @@
 import React from "react";
 import styled, { css, keyframes } from "styled-components";
 
+const rotateAnimation = keyframes`
+0% {
+    transform: rotateZ(0deg);
+}
+100% {
+    transform: rotateZ(360deg);
+}
+`
+
 const StyledButton = styled.button`
   border: none;
   padding: 10px 15px;
@@ -9,6 +18,9 @@ const StyledButton = styled.button`
   align-self: ${(props) => props.align || "stretch"};
   &:focus {
     outline: none;
+  }
+  &: hover {
+    animation: ${rotateAnimation} 1s infinite linear;
   }
 
   ${(props) =>
@@ -27,9 +39,9 @@ const StyledButton = styled.button`
     `}
 `;
 
-const LargeButton = styled(StyledButton)`
-  font-size: 2em;
-`;
+// const LargeButton = styled(StyledButton)`
+//   font-size: 2em;
+// `;
 
 export default function Button(props) {
   return <StyledButton {...props} />;
