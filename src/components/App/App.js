@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Flex from "../Flex/Flex";
 import Title from "../Title/Title";
 import Console from "../Console/Console";
+import Button from "../Button/Button";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -17,7 +18,12 @@ function App() {
       <Flex justify={"center"}>
         <Title color={"green"}>Console cmd 2022.</Title>
       </Flex>
-      <Console />
+      <Flex direction={"column"}>
+        <Console />
+        <Button outlined color={"green"} align={"flex-end"}>
+          Отправить
+        </Button>
+      </Flex>
     </AppWrapper>
   );
 }
