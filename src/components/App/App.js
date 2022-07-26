@@ -16,10 +16,10 @@ function App() {
   return (
     <AppWrapper>
       <Flex justify={"center"}>
-        <Title color={"green"}>Console cmd 2022.</Title>
+        <Title>Console cmd 2022.</Title>
       </Flex>
       <Flex direction={"column"} margin={"10px 0"}>
-        <Console color={"green"} />
+        <Console />
         <Button color={"green"} align={"flex-end"}>
           Отправить
         </Button>
