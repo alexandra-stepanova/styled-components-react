@@ -16,6 +16,10 @@ const theme = {
     primary: "red",
     secondary: "red",
   },
+  media: {
+    phone: "(max-width: 425px)",
+    tablet: "(max-width: 768px) and (min-width: 425px)",
+  },
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
